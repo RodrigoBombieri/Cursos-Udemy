@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|c:\\users\\rodrigo\\escritorio\\programacion\\udemy\\blazorefudemy\\pages\\gestionartipoproducto.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|solutionrelative:pages\\gestionartipoproducto.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|c:\\users\\rodrigo\\escritorio\\programacion\\udemy\\blazorefudemy\\servicios\\serviciotipoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|solutionrelative:servicios\\serviciotipoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|c:\\users\\rodrigo\\escritorio\\programacion\\udemy\\blazorefudemy\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|solutionrelative:shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|c:\\users\\rodrigo\\escritorio\\programacion\\udemy\\blazorefudemy\\servicios\\iserviciotipoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|solutionrelative:servicios\\iserviciotipoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "Shared\\NavMenu.razor",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABIAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T19:13:00.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GestionarTipoProducto.razor",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\Pages\\GestionarTipoProducto.razor",
+              "RelativeDocumentMoniker": "Pages\\GestionarTipoProducto.razor",
+              "ToolTip": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\Pages\\GestionarTipoProducto.razor",
+              "RelativeToolTip": "Pages\\GestionarTipoProducto.razor",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACMAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T19:12:32.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServicioTipoProducto.cs",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\Servicios\\ServicioTipoProducto.cs",
+              "RelativeDocumentMoniker": "Servicios\\ServicioTipoProducto.cs",
+              "ToolTip": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\Servicios\\ServicioTipoProducto.cs",
+              "RelativeToolTip": "Servicios\\ServicioTipoProducto.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAYwCIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T19:07:29.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IServicioTipoProducto.cs",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\Servicios\\IServicioTipoProducto.cs",
+              "RelativeDocumentMoniker": "Servicios\\IServicioTipoProducto.cs",
+              "ToolTip": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\Servicios\\IServicioTipoProducto.cs",
+              "RelativeToolTip": "Servicios\\IServicioTipoProducto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T19:01:28.333Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
