@@ -1,21 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\",
+  "WorkspaceRootPath": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|c:\\users\\rodrigo\\escritorio\\programacion\\udemy\\blazorefudemy\\pages\\gestionartipoproducto.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|solutionrelative:pages\\gestionartipoproducto.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|c:\\users\\rodrigo\\escritorio\\cursos-udemy\\blazorefudemy\\pages\\gestionartienda.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|solutionrelative:pages\\gestionartienda.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|c:\\users\\rodrigo\\escritorio\\programacion\\udemy\\blazorefudemy\\servicios\\serviciotipoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|solutionrelative:servicios\\serviciotipoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|c:\\users\\rodrigo\\escritorio\\programacion\\udemy\\blazorefudemy\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|c:\\users\\rodrigo\\escritorio\\cursos-udemy\\blazorefudemy\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|solutionrelative:shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|c:\\users\\rodrigo\\escritorio\\programacion\\udemy\\blazorefudemy\\servicios\\iserviciotipoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|c:\\users\\rodrigo\\escritorio\\cursos-udemy\\blazorefudemy\\nuestraaplicaciondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|solutionrelative:nuestraaplicaciondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|c:\\users\\rodrigo\\escritorio\\cursos-udemy\\blazorefudemy\\pages\\gestionartipoproducto.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|solutionrelative:pages\\gestionartipoproducto.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|c:\\users\\rodrigo\\escritorio\\cursos-udemy\\blazorefudemy\\servicios\\serviciotipoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|solutionrelative:servicios\\serviciotipoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|c:\\users\\rodrigo\\escritorio\\cursos-udemy\\blazorefudemy\\servicios\\iserviciotipoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{128E7432-F05C-4BBB-B264-053E5305AEC7}|BlazorEFUdemy.csproj|solutionrelative:servicios\\iserviciotipoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,55 +50,79 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GestionarTienda.razor",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\Pages\\GestionarTienda.razor",
+              "RelativeDocumentMoniker": "Pages\\GestionarTienda.razor",
+              "ToolTip": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\Pages\\GestionarTienda.razor",
+              "RelativeToolTip": "Pages\\GestionarTienda.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T03:11:57.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "NuestraAplicacionDbcontext.cs",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\NuestraAplicacionDbcontext.cs",
+              "RelativeDocumentMoniker": "NuestraAplicacionDbcontext.cs",
+              "ToolTip": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\NuestraAplicacionDbcontext.cs",
+              "RelativeToolTip": "NuestraAplicacionDbcontext.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T03:09:46.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\Shared\\NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\Shared\\NavMenu.razor",
               "RelativeDocumentMoniker": "Shared\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\Shared\\NavMenu.razor",
               "RelativeToolTip": "Shared\\NavMenu.razor",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABIAAABLAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-01T19:13:00.614Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "GestionarTipoProducto.razor",
-              "DocumentMoniker": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\Pages\\GestionarTipoProducto.razor",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\Pages\\GestionarTipoProducto.razor",
               "RelativeDocumentMoniker": "Pages\\GestionarTipoProducto.razor",
-              "ToolTip": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\Pages\\GestionarTipoProducto.razor",
+              "ToolTip": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\Pages\\GestionarTipoProducto.razor",
               "RelativeToolTip": "Pages\\GestionarTipoProducto.razor",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACMAAAAcAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAACMAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-01T19:12:32.932Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ServicioTipoProducto.cs",
-              "DocumentMoniker": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\Servicios\\ServicioTipoProducto.cs",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\Servicios\\ServicioTipoProducto.cs",
               "RelativeDocumentMoniker": "Servicios\\ServicioTipoProducto.cs",
-              "ToolTip": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\Servicios\\ServicioTipoProducto.cs",
+              "ToolTip": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\Servicios\\ServicioTipoProducto.cs",
               "RelativeToolTip": "Servicios\\ServicioTipoProducto.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAYwCIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T19:07:29.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T19:07:29.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "IServicioTipoProducto.cs",
-              "DocumentMoniker": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\Servicios\\IServicioTipoProducto.cs",
+              "DocumentMoniker": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\Servicios\\IServicioTipoProducto.cs",
               "RelativeDocumentMoniker": "Servicios\\IServicioTipoProducto.cs",
-              "ToolTip": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\Servicios\\IServicioTipoProducto.cs",
+              "ToolTip": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\Servicios\\IServicioTipoProducto.cs",
               "RelativeToolTip": "Servicios\\IServicioTipoProducto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T19:01:28.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T19:01:28.333Z"
             }
           ]
         }
