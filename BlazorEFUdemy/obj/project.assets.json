@@ -2964,11 +2964,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\BlazorEFUdemy.csproj",
+      "projectUniqueName": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\BlazorEFUdemy.csproj",
       "projectName": "BlazorEFUdemy",
-      "projectPath": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\BlazorEFUdemy.csproj",
+      "projectPath": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\BlazorEFUdemy.csproj",
       "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\obj\\",
+      "outputPath": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rodrigo\\AppData\\Roaming\\NuGet\\NuGet.Config",

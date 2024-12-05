@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "D/HJ3eQdxHEA+nVKTYFKGyOtsMcSTf8kBHeI0AEv5F0=",
+  "Hash": "xSKlSUr6uOS5sRW2QFUKNg7S5hc0DP0SRouyyKtwJ3A=",
   "Source": "BlazorEFUdemy",
   "BasePath": "_content/BlazorEFUdemy",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BlazorEFUdemy\\wwwroot",
       "Source": "BlazorEFUdemy",
-      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\",
       "BasePath": "_content/BlazorEFUdemy",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BlazorEFUdemy.styles.css",
+      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BlazorEFUdemy.styles.css",
       "SourceId": "BlazorEFUdemy",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/BlazorEFUdemy",
       "RelativePath": "BlazorEFUdemy.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BlazorEFUdemy.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BlazorEFUdemy.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BlazorEFUdemy.bundle.scp.css",
+      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BlazorEFUdemy.bundle.scp.css",
       "SourceId": "BlazorEFUdemy",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/BlazorEFUdemy",
       "RelativePath": "BlazorEFUdemy.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BlazorEFUdemy.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BlazorEFUdemy.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "BlazorEFUdemy",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\",
       "BasePath": "_content/BlazorEFUdemy",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "BlazorEFUdemy",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\",
       "BasePath": "_content/BlazorEFUdemy",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "BlazorEFUdemy",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\",
       "BasePath": "_content/BlazorEFUdemy",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "BlazorEFUdemy",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\",
       "BasePath": "_content/BlazorEFUdemy",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "BlazorEFUdemy",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\",
       "BasePath": "_content/BlazorEFUdemy",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "BlazorEFUdemy",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\",
       "BasePath": "_content/BlazorEFUdemy",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "BlazorEFUdemy",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\",
       "BasePath": "_content/BlazorEFUdemy",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "BlazorEFUdemy",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\",
       "BasePath": "_content/BlazorEFUdemy",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "BlazorEFUdemy",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\",
       "BasePath": "_content/BlazorEFUdemy",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "BlazorEFUdemy",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\",
       "BasePath": "_content/BlazorEFUdemy",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "BlazorEFUdemy",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\",
       "BasePath": "_content/BlazorEFUdemy",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\css\\site.css",
       "SourceId": "BlazorEFUdemy",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\",
       "BasePath": "_content/BlazorEFUdemy",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\favicon.png",
       "SourceId": "BlazorEFUdemy",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\",
       "BasePath": "_content/BlazorEFUdemy",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

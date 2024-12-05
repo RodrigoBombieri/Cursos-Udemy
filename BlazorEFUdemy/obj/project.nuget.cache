@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eekYV8eHc26Tna/Ua91sZLePyOMfEvMJ6IVzf4bz3dTWt95IHVCrGoyINdQRaY0DrCkoOJLoQl419gn75j7VPg==",
+  "dgSpecHash": "C6QmKS/YWF6RqPwNz/ItweBxY4OhBmAqSzAsnlPUpRcYQb8UsalGF92hrlqXp1L6GrqnhCQuvWz1bP4BZ17Vhg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rodrigo\\Escritorio\\Programacion\\udemy\\BlazorEFUdemy\\BlazorEFUdemy.csproj",
+  "projectFilePath": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\BlazorEFUdemy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rodrigo\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
