@@ -1,0 +1,111 @@
+﻿@page "/ModificarProducto/{IdProducto:int}"
+@using BlazorEFUdemy.Modelo
+@using BlazorEFUdemy.Servicios
+@inject IServicioProducto servicioProducto
+@inject IServicioTipoProducto servicioTipoProducto
+@inject NavigationManager navigationManager
+
+<h3>Modificar Producto</h3>
+<EditForm Model="producto" OnValidSubmit="HandleValidSubmit">
+
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="form-group row">
+        <label for="descripcion" class="col-sm-2 col-form-label">Descripción</label>
+        <div class="col-sm-10 m-2">
+            <InputText id="descripcion" class="form-control" placeholder="Descripción del producto"
+                       @bind-Value="producto.Descripcion" />
+            <ValidationMessage For="@(() => producto.Descripcion)" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="precio" class="col-sm-2 col-form-label">Precio</label>
+        <div class="col-sm-10 m-2">
+            <InputNumber id="precio" class="form-control" placeholder="Precio del producto"
+                         @bind-Value="producto.Precio" />
+            <ValidationMessage For="@(() => producto.Precio)" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="tipoProducto" class="col-sm-2 col-form-label">Tipo de Producto</label>
+        <div class="col-sm-10 m-2">
+            <InputSelect id="tipoProducto" class="form-control" @bind-Value="producto.TipoProductoId">
+                @foreach (var tipoProducto in listaTipoProductos)
+                {
+                    <option value="@tipoProducto.Id">@tipoProducto.Tipo</option>
+                }
+            </InputSelect>
+            <ValidationMessage For="@(() => producto.TipoProductoId)" />
+        </div>
+    </div>
+    <div class="row content">
+        <div class="col-md-1">
+            <input type="submit" class="btn btn-primary" value="Modificar" />
+        </div>
+        <div class="col-md-2">
+            <input type="button" class="btn btn-danger" value="Cancelar" @onclick="Cancelar" />
+        </div>
+    </div>
+    <div class="row content">
+        @resultado
+    </div>
+</EditForm>
+
+
+@code {
+    [Parameter]
+    // Obtenemos el id desde la URL para buscar el producto a modificar
+    public int IdProducto { get; set; }
+    public Producto producto = new Producto();
+    public List<TipoProducto> listaTipoProductos { get; set; } = new List<TipoProducto>();
+    public string resultado = string.Empty;
+
+    // Método para obtener el producto a modificar
+    protected override async Task OnInitializedAsync()
+    {
+        // Obtener el producto a modificar
+        producto = await servicioProducto.DameProducto(IdProducto);
+        // Obtener los tipos de productos de la base de datos
+        listaTipoProductos = (await servicioTipoProducto.DameTiposProductos()).ToList();
+        StateHasChanged();
+    }
+
+    public void HandleValidSubmit()
+    {
+        var editContent = new EditContext(producto);
+        var isValid = editContent.Validate();
+        if (!isValid)
+        {
+            StateHasChanged();
+        }
+        else
+        {
+            Modificar();
+        }
+    }
+
+    protected async Task Modificar()
+    {
+        try
+        {
+            if (producto.Descripcion != String.Empty &&
+               producto.Precio != 0)
+            {
+                await servicioProducto.ModificarProducto(producto);
+                resultado = "Producto modificado correctamente";
+                StateHasChanged();
+            }
+            navigationManager.NavigateTo("/GestionarProducto");
+
+        }
+        catch (Exception ex)
+        {
+            resultado = "Error al modificar el producto";
+        }
+    }
+
+    private void Cancelar()
+    {
+        navigationManager.NavigateTo("/GestionarProducto");
+    }
+}

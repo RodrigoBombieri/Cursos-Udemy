@@ -1,0 +1,65 @@
+﻿@page "/GestionarTienda"
+@using BlazorEFUdemy.Modelo
+@using BlazorEFUdemy.Servicios
+@inject IServicioTienda servicioTienda
+<h3>Gestionar Tienda:</h3>
+
+<div class="form-group row">
+    <div class="col-sm-10">
+        <a href="/NuevaTienda" class="btn btn-primary m-1">Nueva Tienda</a>
+    </div>
+</div>
+
+@if (listaTiendas.Count == 0)
+{
+    <p class="text-danger"> No hay tiendas disponibles</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th><strong>Nombre</strong></th>
+                <th><strong>Dirección</strong></th>
+                <th><strong>Sitio Web</strong></th>
+                <th><strong>Fecha de Inauguración</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Tienda tienda in listaTiendas)
+            {
+                <tr>
+                    <td>@tienda.Nombre</td>
+                    <td>@tienda.Direccion</td>
+                    <td>@tienda.SitioWeb</td>
+                    <td>@tienda.FechaApertura.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        <a href="@($"ModificarTienda/{tienda.Id}")" class="btn btn-primary m-1">Modificar</a>
+                    </td>
+                    <td>
+                        <input type="submit" class="btn btn-danger" value="Eliminar" @onclick="(() => DarDeBaja(tienda.Id))" />
+                    </td>
+                    <td>
+                        <a href="@($"GestionarProductoTienda/{tienda.Id}")" class="btn btn-success m-1">Gestionar Productos</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    List<Tienda> listaTiendas = new List<Tienda>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        listaTiendas = (await servicioTienda.DameTiendas()).ToList();
+    }
+
+    private async void DarDeBaja(int idTienda)
+    {
+        await servicioTienda.EliminarTienda(idTienda);
+        listaTiendas = (await servicioTienda.DameTiendas()).ToList();
+        StateHasChanged();
+    }
+}

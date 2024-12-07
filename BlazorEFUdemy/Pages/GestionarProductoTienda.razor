@@ -1,0 +1,153 @@
+﻿@page "/GestionarProductoTienda/{IdTienda:int}"
+@using BlazorEFUdemy.Modelo
+@using BlazorEFUdemy.Servicios
+@inject IServicioTienda servicioTienda
+@inject IServicioProducto servicioProducto
+@inject IServicioProductoTienda servicioProductoTienda
+@inject NavigationManager NavigationManager
+
+<h3>Gestionar Productos @tienda.Nombre</h3>
+<EditForm Model="tiendaProducto" OnValidSubmit="HandleValidSubmit">
+    <div class="form-group row">
+        <label for="" class="col-sm-2 col-form-label">Producto seleccionado:</label>
+        <div class="col-sm-10">
+            <InputSelect @bind-Value="opcionSeleccionada" class="form-control" @oninput="cambioElemento">
+                <option value="0">Seleccione un producto</option>
+                @foreach (var producto in listaProductos)
+                {
+                    <option value="@producto.Id">@producto.Descripcion</option>
+                }
+            </InputSelect>
+        </div>
+        <label for="Stock" class="col-sm-2 col-form-label">
+            Stock disponible:
+        </label>
+        <div class="col-sm-10">
+            <InputNumber id="stock" class="form-control" placeholder="Stock disponible"
+                         @bind-Value="tiendaProducto.StockDisponible" />
+
+        </div>
+        <div class="row content">
+            <div class="col-md-1">
+                <input type="submit" class="btn btn-success" value="Guardar" />
+            </div>
+            <div class="col-md-2">
+                <input type="button" value="Cancelar" class="btn btn-danger" @onclick="Cancelar" />
+            </div>
+        </div>
+        <div class="row content">
+            @resultado
+        </div>
+    </div>
+</EditForm>
+
+@if (listaProductosTienda.Count == 0)
+{
+    <p class="text-danger">No hay productos disponibles</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th><strong>Producto</strong></th>
+                <th><strong>Precio</strong></th>
+                <th><strong>Tipo de Producto</strong></th>
+                <th><strong>Stock</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (TiendaProducto productoTienda in listaProductosTienda)
+            {
+                <tr>
+                    <td>@productoTienda.Producto.Descripcion</td>
+                    <td>@productoTienda.Producto.Precio.ToString() $</td>
+                    <td>@productoTienda.Producto.TipoProducto.Tipo</td>
+                    <td>@productoTienda.StockDisponible.ToString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    [Parameter]
+    public int IdTienda { get; set; }
+    Tienda tienda = new Tienda();
+    List<Producto> listaProductos = new List<Producto>();
+    Producto producto = new Producto();
+    TiendaProducto tiendaProducto = new TiendaProducto();
+    List<TiendaProducto> listaProductosTienda = new List<TiendaProducto>();
+    String opcionSeleccionada = "0";
+    String resultado = String.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        tienda = await servicioTienda.DameTienda(IdTienda);
+        listaProductos = (await servicioProducto.DameProductos()).ToList();
+        listaProductosTienda = (await servicioProductoTienda.DameProductosTienda(tienda)).ToList();
+        StateHasChanged();
+    }
+
+    public void HandleValidSubmit()
+    {
+        var editContext = new EditContext(tiendaProducto);
+        var isValid = editContext.Validate();
+        if (!isValid)
+        {
+            StateHasChanged();
+        }
+        else
+        {
+            Guardar();
+        }
+    }
+
+    private async void cambioElemento(ChangeEventArgs e)
+    {
+        if (e.Value.ToString() != "0")
+        {
+            producto = await servicioProducto.DameProducto(Convert.ToInt32(e.Value));
+        }
+        else
+        {
+            producto = new Producto();
+        }
+        StateHasChanged();
+    }
+    protected async Task Guardar()
+    {
+        try
+        {
+            if (opcionSeleccionada != "0")
+            {
+                tiendaProducto.Producto = producto;
+                tiendaProducto.ProductoId = producto.Id;
+                tiendaProducto.TiendaId = tienda.Id;
+                tiendaProducto.Tienda = tienda;
+
+                await servicioProductoTienda.GestionarProductoTienda(tiendaProducto);
+                listaProductosTienda = (await servicioProductoTienda.DameProductosTienda(tienda)).ToList();
+                resultado = "Producto guardado correctamente";
+            }
+            else
+            {
+                resultado = "Seleccione un producto";
+            }
+            tiendaProducto = new TiendaProducto();
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            resultado = "Se produjo un error: " + ex.InnerException.ToString();
+            StateHasChanged();
+        }
+    }
+
+
+    protected void Cancelar()
+    {
+        NavigationManager.NavigateTo("/GestionarTienda");
+    }
+}

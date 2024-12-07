@@ -1,0 +1,100 @@
+﻿@page "/ModificarTienda/{IdTienda:int}"
+@using BlazorEFUdemy.Modelo
+@using BlazorEFUdemy.Servicios
+@inject IServicioTienda servicioTienda
+@inject NavigationManager navigationManager
+
+<h3>Modificar Tienda</h3>
+<EditForm Model="tienda" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="form-group row">
+        <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+        <div class="col-sm-10 m-2">
+            <InputText id="nombre" class="form-control" placeholder="Nombre de la tienda"
+                       @bind-Value="tienda.Nombre" />
+            <ValidationMessage For="@(() => tienda.Nombre)" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="direccion" class="col-sm-2 col-form-label">Dirección</label>
+        <div class="col-sm-10 m-2">
+            <InputText id="direccion" class="form-control" placeholder="Dirección de la tienda"
+                       @bind-Value="tienda.Direccion" />
+            <ValidationMessage For="@(() => tienda.Direccion)" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="sitioWeb" class="col-sm-2 col-form-label">Sitio Web</label>
+        <div class="col-sm-10 m-2">
+            <InputText id="sitioWeb" class="form-control" placeholder="Sitio Web" @bind-Value="tienda.SitioWeb" />
+            <ValidationMessage For="@(() => tienda.SitioWeb)" />
+        </div>
+    </div>
+    <div class="row content">
+        <div class="col-md-1">
+            <input type="submit" class="btn btn-primary" value="Modificar" />
+        </div>
+        <div class="col-md-2">
+            <input type="button" class="btn btn-danger" value="Cancelar" @onclick="Cancelar" />
+        </div>
+    </div>
+    <div class="row content">
+        @resultado
+    </div>
+
+</EditForm>
+@code {
+    [Parameter]
+    public int IdTienda { get; set; }
+    public Tienda tienda = new Tienda();
+    public string resultado = string.Empty;
+
+    // Método para obtener la tienda a modificar
+    protected override async Task OnInitializedAsync()
+    {
+        tienda = await servicioTienda.DameTienda(IdTienda);
+        StateHasChanged();
+    }
+
+
+    public void HandleValidSubmit()
+    {
+        var editContent = new EditContext(tienda);
+        var isValid = editContent.Validate();
+        if (!isValid)
+        {
+            StateHasChanged();
+        }
+        else
+        {
+            Modificar();
+        }
+    }
+
+    protected async Task Modificar()
+    {
+        try
+        {
+            if (tienda.Nombre != String.Empty &&
+               tienda.Direccion != String.Empty &&
+               tienda.SitioWeb != String.Empty)
+            {
+                await servicioTienda.ModificarTienda(tienda);
+                resultado = "Tienda modificada correctamente";
+            }
+            navigationManager.NavigateTo("/GestionarTienda");
+
+        }
+        catch (Exception ex)
+        {
+            resultado = "Se produjo un error " + ex.Message;
+            StateHasChanged();
+        }
+    }
+
+    public void Cancelar()
+    {
+        navigationManager.NavigateTo("/GestionarTienda");
+    }
+}
