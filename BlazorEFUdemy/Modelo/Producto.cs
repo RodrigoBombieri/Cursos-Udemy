@@ -13,5 +13,7 @@ namespace BlazorEFUdemy.Modelo
         [Required(ErrorMessage = "* Campo Obligatorio")]
         public int TipoProductoId { get; set; }
         public TipoProducto TipoProducto { get; set; } = null!;
+        public ICollection<Venta> Ventas { get; set; }
+        public ICollection<TiendaProducto> tiendasProducto { get; set; }
     }
 }

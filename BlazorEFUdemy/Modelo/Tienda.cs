@@ -15,7 +15,7 @@ namespace BlazorEFUdemy.Modelo
         [Url(ErrorMessage = "La dirección web no es válida")]
         public string SitioWeb { get; set; } = null!;
         public DateTime FechaApertura { get; set; }
-        public List<TiendaProducto> TiendaProductos { get; set; } = new List<TiendaProducto>();
-        public List<Venta> Ventas { get; set; } = new List<Venta>();
+        public ICollection<TiendaProducto> TiendaProductos { get; set; }
+        public ICollection<Venta> Ventas { get; set; }
     }
 }

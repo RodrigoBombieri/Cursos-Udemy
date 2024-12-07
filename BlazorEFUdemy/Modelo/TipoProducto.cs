@@ -10,5 +10,6 @@ namespace BlazorEFUdemy.Modelo
         // [Required]
         // [StringLength(maximumLength:300)]
         public string Tipo { get; set; } = null!;
+        public ICollection<Producto> Productos { get; set; }
     }
 }
