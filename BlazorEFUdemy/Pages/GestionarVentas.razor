@@ -65,6 +65,7 @@ else
                 <th><strong>Cantidad</strong></th>
                 <th><strong>Precio Venta</strong></th>
                 <th><strong>Total</strong></th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -80,6 +81,9 @@ else
                         <td>@ventas.Cantidad</td>
                         <td>@ventas.PrecioVenta.ToString() $</td>
                         <td>@Math.Round(ventas.PrecioVenta * ventas.Cantidad,2) $</td>
+                        <td>
+                            <input type="submit" class="btn btn-danger" value="Anular" @onclick="(() => DarDeBaja(ventas.Id))" />
+                        </td>
                     </tr>
                 }
             }
@@ -158,6 +162,21 @@ else
                 resultado = "Seleccione un producto";
             }
             venta = new Venta();
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            resultado = "Se produjo un error: " + ex.Message.ToString();
+            StateHasChanged();
+        }
+    }
+
+    protected async void DarDeBaja(int id)
+    {
+        try
+        {
+            await servicioVenta.AnularVenta(id);
+            listaVentas = (await servicioVenta.DameVentas(tienda)).ToList();
             StateHasChanged();
         }
         catch (Exception ex)

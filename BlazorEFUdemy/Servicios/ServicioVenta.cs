@@ -11,10 +11,38 @@ namespace BlazorEFUdemy.Servicios
         {
             this.basedatos = basedatos;
         }
+
+        public async Task AnularVenta(int idVenta)
+        {
+            var venta = await basedatos.Ventas.SingleOrDefaultAsync(venta => venta.Id == idVenta);
+            if (venta != null)
+            {
+                // Anulamos la venta
+                venta.FechaCancelacion = DateTime.Now;
+                basedatos.Update(venta);
+                // Actualizamos el stock del producto en la tienda
+                var tiendaProducto = basedatos.TiendaProductos.SingleOrDefault(tp => tp.ProductoId == venta.ProductoId
+                && tp.TiendaId == venta.TiendaId);
+                if (tiendaProducto != null)
+                {
+                    // Actualizamos el stock
+                    tiendaProducto.StockDisponible += venta.Cantidad;
+                    basedatos.TiendaProductos.Update(tiendaProducto);
+                }
+                await basedatos.SaveChangesAsync();
+            }
+            else
+            {
+                throw new ApplicationException("No se encontró la venta");
+            }   
+        }
+
         public async Task<IEnumerable<Venta>> DameVentas(Tienda tienda)
         {
-            // Nos traemos las ventas de la tienda
-            return await basedatos.Ventas.Include(v => v.Producto).Where(tp => tp.TiendaId == tienda.Id).ToListAsync();
+            // Nos traemos las ventas de la tienda que no han sido canceladas
+            return await basedatos.Ventas.
+                Where(v => v.TiendaId == tienda.Id && v.FechaCancelacion==null).
+                Include(v => v.Producto).ToListAsync();
         }
 
         public async Task<Venta> GestionarVentas(Venta venta)
