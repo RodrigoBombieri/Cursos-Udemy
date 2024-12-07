@@ -8,6 +8,8 @@
         public int ProductoId { get; set; } 
         public Producto Producto { get; set; } = null!;
         public decimal PrecioVenta { get; set; }
+        public int Cantidad { get; set; }
+        public DateTime? FechaCancelacion { get; set; }
         public DateTime FechaVenta { get; set; }
     }
 }

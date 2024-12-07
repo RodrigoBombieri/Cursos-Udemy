@@ -28,6 +28,13 @@
                          @bind-Value="venta.PrecioVenta" />
 
         </div>
+        <label for="Cantidad" class="col-sm-2 col-form-label">
+            Cantidad:
+        </label>
+        <div class="col-sm-10">
+            <InputNumber id="Cantidad" class="form-control" placeholder="Cantidad"
+                         @bind-Value="venta.Cantidad" />
+        </div>
         <div class="row content">
             <div class="col-md-1">
                 <input type="submit" class="btn btn-success" value="Guardar" />
@@ -51,10 +58,13 @@ else
     <table class="table">
         <thead>
             <tr>
+                <th><strong>ID Venta</strong></th>
                 <th><strong>Producto</strong></th>
-                <th><strong>Precio</strong></th>
+                <th><strong>Precio de Compra</strong></th>
                 <th><strong>Tipo de Producto</strong></th>
+                <th><strong>Cantidad</strong></th>
                 <th><strong>Precio Venta</strong></th>
+                <th><strong>Total</strong></th>
             </tr>
         </thead>
         <tbody>
@@ -63,10 +73,13 @@ else
                 @foreach (Venta ventas in listaVentas)
                 {
                     <tr>
+                        <td>@ventas.Id.ToString()</td>
                         <td>@ventas.Producto.Descripcion</td>
-                        <td>@ventas.Producto.Precio</td>
+                        <td>@ventas.Producto.Precio.ToString() $</td>
                         <td>@ventas.Producto.TipoProducto.Tipo</td>
-                        <td>@ventas.PrecioVenta</td>
+                        <td>@ventas.Cantidad</td>
+                        <td>@ventas.PrecioVenta.ToString() $</td>
+                        <td>@Math.Round(ventas.PrecioVenta * ventas.Cantidad,2) $</td>
                     </tr>
                 }
             }
@@ -149,7 +162,7 @@ else
         }
         catch (Exception ex)
         {
-            resultado = "Se produjo un error: " + ex.InnerException.ToString();
+            resultado = "Se produjo un error: " + ex.Message.ToString();
             StateHasChanged();
         }
     }
