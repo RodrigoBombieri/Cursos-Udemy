@@ -151,3 +151,7 @@ C:\Users\Rodrigo\Escritorio\Cursos-Udemy\BlazorEFUdemy\obj\Debug\net7.0\refint\B
 C:\Users\Rodrigo\Escritorio\Cursos-Udemy\BlazorEFUdemy\obj\Debug\net7.0\BlazorEFUdemy.pdb
 C:\Users\Rodrigo\Escritorio\Cursos-Udemy\BlazorEFUdemy\obj\Debug\net7.0\BlazorEFUdemy.genruntimeconfig.cache
 C:\Users\Rodrigo\Escritorio\Cursos-Udemy\BlazorEFUdemy\obj\Debug\net7.0\ref\BlazorEFUdemy.dll
+C:\Users\Rodrigo\Escritorio\Cursos-Udemy\BlazorEFUdemy\bin\Debug\net7.0\BlazorEFUdemy.staticwebassets.endpoints.json
+C:\Users\Rodrigo\Escritorio\Cursos-Udemy\BlazorEFUdemy\obj\Debug\net7.0\staticwebassets.build.endpoints.json
+C:\Users\Rodrigo\Escritorio\Cursos-Udemy\BlazorEFUdemy\obj\Debug\net7.0\staticwebassets\msbuild.BlazorEFUdemy.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Rodrigo\Escritorio\Cursos-Udemy\BlazorEFUdemy\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt

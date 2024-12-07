@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BlazorEFUdemy.bundle.scp.css",
-      "PackagePath": "staticwebassets\\BlazorEFUdemy.bundle.scp.css"
+      "PackagePath": "staticwebassets\\BlazorEFUdemy.m9l6xcwdnu.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
@@ -55,6 +55,10 @@
     {
       "Id": "C:\\Users\\Rodrigo\\Escritorio\\Cursos-Udemy\\BlazorEFUdemy\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BlazorEFUdemy.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BlazorEFUdemy.Microsoft.AspNetCore.StaticWebAssets.props",
