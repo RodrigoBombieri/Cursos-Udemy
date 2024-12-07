@@ -40,8 +40,12 @@ else
                         <input type="submit" class="btn btn-danger" value="Eliminar" @onclick="(() => DarDeBaja(tienda.Id))" />
                     </td>
                     <td>
-                        <a href="@($"GestionarProductoTienda/{tienda.Id}")" class="btn btn-success m-1">Gestionar Productos</a>
+                        <a href="@($"GestionarProductoTienda/{tienda.Id}")" class="btn btn-info m-1">Gestionar Productos</a>
                     </td>
+                    <td>
+                        <a href="@($"GestionarVentas/{tienda.Id}")" class="btn btn-success m-1">Gestionar Ventas</a>
+                    </td>
+
                 </tr>
             }
         </tbody>

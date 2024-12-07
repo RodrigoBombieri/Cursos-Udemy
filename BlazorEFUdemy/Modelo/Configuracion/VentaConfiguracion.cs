@@ -8,7 +8,6 @@ namespace BlazorEFUdemy.Modelo.Configuracion
     {
         public void Configure(EntityTypeBuilder<Venta> builder)
         {
-            builder.HasKey(v => new { v.TiendaId, v.ProductoId }); // Clave compuesta
             builder.Property(v => v.PrecioVenta).HasPrecision(10, 2);
         }
     }

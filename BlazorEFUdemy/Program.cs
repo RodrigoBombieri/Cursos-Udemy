@@ -24,6 +24,7 @@ namespace BlazorEFUdemy
             builder.Services.AddScoped<IServicioTienda, ServicioTienda>();
             builder.Services.AddScoped<IServicioProducto, ServicioProducto>();
             builder.Services.AddScoped<IServicioProductoTienda, ServicioProductoTienda>();
+            builder.Services.AddScoped<IServicioVenta, ServicioVenta>();
 
             var app = builder.Build();
 
