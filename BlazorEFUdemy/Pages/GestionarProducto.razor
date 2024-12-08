@@ -36,7 +36,7 @@ else
                         <a href="@($"ModificarProducto/{producto.Id}")" class="btn btn-primary m-1">Modificar</a>
                     </td>
                     <td>
-                        <input type="submit" class="btn btn-danger" value="Eliminar" @onclick="(() => DarDeBaja(producto.Id))" />
+                        <input type="submit" class="btn btn-danger" value="Eliminar" @onclick="(() => OnDelete(producto.Id))" />
                     </td>
                 </tr>
             }
@@ -44,11 +44,39 @@ else
     </table>
 }
 
+@if (Show)
+{
+    <div class="modal" tabindex="-1" role="dialog" style="display: @(Show ? "block" : "none")">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aviso</h5>
+                </div>
+                <div class="modal-body">
+                    <p>¿ Estas seguro que deseas continuar ? Esta accion es irreversible.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" @onclick="@(()=> DarDeBaja())">OK</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" @onclick="@(()=> this.Show = false)">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
 
 
 @code {
 
     List<Producto> listaProductos = new List<Producto>();
+
+    public bool Show { get; set; } = false;
+    int idProductoAux = -1;
+
+    private void OnDelete(int idProducto)
+    {
+        idProductoAux = idProducto;
+        Show = true;
+    }
 
     protected override async Task OnInitializedAsync()
     {
@@ -56,11 +84,21 @@ else
         StateHasChanged();
     }
 
-    private async void DarDeBaja(int idProducto)
+    private async void DarDeBaja()
     {
-        await servicioProducto.EliminarProducto(idProducto);
-        listaProductos = (await servicioProducto.DameProductos()).ToList();
-        StateHasChanged();
+        try
+        {
+            await servicioProducto.EliminarProducto(idProductoAux);
+            listaProductos = (await servicioProducto.DameProductos()).ToList();
+            this.Show = false;
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            
+            ex.ToString();
+        }
+        
     }
 
 }

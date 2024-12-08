@@ -34,7 +34,7 @@
         <input type="submit" class="form-control col-12 btn btn-primary" value="Alta/modificación tipo de producto" @onclick="AltaTipoProducto">Alta Tipo Producto</input>
     </div>
     <div class="col-sm-5 m-3">
-        <input type="submit" class="form-control col-12 btn btn-danger" value="Eliminar tipo de producto" @onclick="BorrarTipoProducto">Borrar Tipo Producto</input>
+        <input type="submit" class="form-control col-12 btn btn-danger" value="Eliminar tipo de producto" @onclick="(() => OnDelete(tipoProducto.Id))">Borrar Tipo Producto</input>
     </div>
     <div class="form-group row">
         <div class="col-sm-10">
@@ -43,12 +43,42 @@
     </div>
 </EditForm>
 
+@if (Show)
+{
+    <div class="modal" tabindex="-1" role="dialog" style="display: @(Show ? "block" : "none")">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aviso</h5>
+                </div>
+                <div class="modal-body">
+                    <p>¿ Estas seguro que deseas continuar ? Esta accion es irreversible.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" @onclick="@(()=> BorrarTipoProducto())">OK</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" @onclick="@(()=> this.Show = false)">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
 @code {
     public TipoProducto tipoProducto = new TipoProducto();
     public TipoProducto tipoProductoSeleccionado = new TipoProducto();
     public List<TipoProducto> listaTiposProducto = new List<TipoProducto>();
     public string resultado = "";
     private string opcionSeleccionada = "0";
+
+    public bool Show { get; set; } = false;
+    int idTipoProductoAux = -1;
+
+
+    private void OnDelete(int idTipoProducto)
+    {
+        this.Show = true;
+        idTipoProductoAux = idTipoProducto;
+    }
 
     // Método que se ejecuta al cargar la página 
     // Y lo que hace es cargar la lista de tipos de productos
@@ -101,13 +131,15 @@
         }
         StateHasChanged();
     }
-    private async void BorrarTipoProducto(MouseEventArgs e)
+    private async void BorrarTipoProducto()
     {      
         try
         {
-            if (await servicioTipoProducto.DameTipoProducto(tipoProducto.Id) != null)
+            if (await servicioTipoProducto.DameTipoProducto(idTipoProductoAux) != null)
             {
-                await servicioTipoProducto.BorrarTipoProducto(tipoProducto.Id);
+                await servicioTipoProducto.BorrarTipoProducto(idTipoProductoAux);
+                this.Show = false;
+                StateHasChanged();
                 resultado = "Tipo de producto eliminado correctamente";
             }
             else

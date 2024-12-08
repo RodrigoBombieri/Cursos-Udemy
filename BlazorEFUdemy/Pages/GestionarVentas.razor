@@ -25,7 +25,7 @@
         </label>
         <div class="col-sm-10">
             <InputNumber Step="0.01" id="PrecioVenta" class="form-control" placeholder="Precio de venta"
-                         @bind-Value="venta.PrecioVenta" />
+            @bind-Value="venta.PrecioVenta" />
 
         </div>
         <label for="Cantidad" class="col-sm-2 col-form-label">
@@ -33,7 +33,7 @@
         </label>
         <div class="col-sm-10">
             <InputNumber id="Cantidad" class="form-control" placeholder="Cantidad"
-                         @bind-Value="venta.Cantidad" />
+            @bind-Value="venta.Cantidad" />
         </div>
         <div class="row content">
             <div class="col-md-1">
@@ -80,9 +80,9 @@ else
                         <td>@ventas.Producto.TipoProducto.Tipo</td>
                         <td>@ventas.Cantidad</td>
                         <td>@ventas.PrecioVenta.ToString() $</td>
-                        <td>@Math.Round(ventas.PrecioVenta * ventas.Cantidad,2) $</td>
+                        <td>@Math.Round(ventas.PrecioVenta * ventas.Cantidad, 2) $</td>
                         <td>
-                            <input type="submit" class="btn btn-danger" value="Anular" @onclick="(() => DarDeBaja(ventas.Id))" />
+                            <input type="submit" class="btn btn-danger" value="Anular" @onclick="(() => OnDelete(ventas.Id))" />
                         </td>
                     </tr>
                 }
@@ -97,6 +97,25 @@ else
     </table>
 }
 
+@if(Show)
+{
+    <div class="modal" tabindex="-1" role="dialog" style="display: @(Show ? "block" : "none")">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aviso</h5>
+                </div>
+                <div class="modal-body">
+                    <p>¿ Estas seguro que deseas continuar ? Esta accion es irreversible.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" @onclick="@(()=> DarDeBaja())">OK</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" @onclick="@(()=> this.Show = false)">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
 
 @code {
     [Parameter]
@@ -108,6 +127,17 @@ else
     List<Venta> listaVentas = new List<Venta>();
     String opcionSeleccionada = "0";
     String resultado = String.Empty;
+    
+    public bool Show { get; set; } = false;
+    int idVentaAux = -1;
+
+
+    private void OnDelete(int idVenta)
+    {
+        this.Show = true;
+        idVentaAux = idVenta;
+    }
+
 
     protected override async Task OnInitializedAsync()
     {
@@ -171,12 +201,13 @@ else
         }
     }
 
-    protected async void DarDeBaja(int id)
+    protected async void DarDeBaja()
     {
         try
         {
-            await servicioVenta.AnularVenta(id);
+            await servicioVenta.AnularVenta(idVentaAux);
             listaVentas = (await servicioVenta.DameVentas(tienda)).ToList();
+            this.Show = false;
             StateHasChanged();
         }
         catch (Exception ex)

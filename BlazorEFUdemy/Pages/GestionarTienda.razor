@@ -37,7 +37,7 @@ else
                         <a href="@($"ModificarTienda/{tienda.Id}")" class="btn btn-primary m-1">Modificar</a>
                     </td>
                     <td>
-                        <input type="submit" class="btn btn-danger" value="Eliminar" @onclick="(() => DarDeBaja(tienda.Id))" />
+                        <input type="submit" class="btn btn-danger" value="Eliminar" @onclick="(() => OnDelete(tienda.Id))" />
                     </td>
                     <td>
                         <a href="@($"GestionarProductoTienda/{tienda.Id}")" class="btn btn-info m-1">Gestionar Productos</a>
@@ -52,18 +52,58 @@ else
     </table>
 }
 
+@if (Show)
+{
+    <div class="modal" tabindex="-1" role="dialog" style="display: @(Show ? "block" : "none")">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aviso</h5>
+                </div>
+                <div class="modal-body">
+                    <p>¿ Estas seguro que deseas continuar ? Esta accion es irreversible.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" @onclick="@(()=> DarDeBaja())">OK</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" @onclick="@(()=> this.Show = false)">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
 @code {
     List<Tienda> listaTiendas = new List<Tienda>();
+
+    public bool Show { get; set; } = false;
+    int idTiendaAux = -1;
+
+
+    private void OnDelete(int idTienda)
+    {
+        this.Show = true;
+        idTiendaAux = idTienda;
+    }
 
     protected override async Task OnInitializedAsync()
     {
         listaTiendas = (await servicioTienda.DameTiendas()).ToList();
     }
 
-    private async void DarDeBaja(int idTienda)
+    private async void DarDeBaja()
     {
-        await servicioTienda.EliminarTienda(idTienda);
-        listaTiendas = (await servicioTienda.DameTiendas()).ToList();
-        StateHasChanged();
+        try
+        {
+            await servicioTienda.EliminarTienda(idTiendaAux);
+            listaTiendas = (await servicioTienda.DameTiendas()).ToList();
+            this.Show = false;
+            StateHasChanged();
+        }
+        catch (Exception)
+        {
+            
+            throw;
+        }
+        
     }
 }
